@@ -1,4 +1,4 @@
-class API::V1::UsersController < ApplicationController
+class Api::V1::UsersController < ApplicationController
 
     skip_before_action :authorized, only: [:create]
 
@@ -14,6 +14,12 @@ class API::V1::UsersController < ApplicationController
             render json: { error: 'failed to create user' }, status: :unprocessable_entity
         end
     end
+
+    def index 
+        users = User.all
+        render json: users  
+    end
+
 
     private
     def user_params

@@ -84,3 +84,7 @@ production:
   database: final_project_backend_api_production
   username: final_project_backend_api
   password: <%= ENV['FINAL_PROJECT_BACKEND_API_DATABASE_PASSWORD'] %>
+
+  # database: backend_fitness_project_production
+  # username: backend_fitness_project
+  # password: <%= ENV['BACKEND_FITNESS_PROJECT_DATABASE_PASSWORD'] %>
