@@ -7,6 +7,6 @@ class User < ApplicationRecord
     has_many :workouts, through: :exercises
     has_many :data_entries, through: :exercises  
 
-    validates :username, uniqueness: {case_sensitive: false}, presence: true
-    validates :name, presence: true
+    validates :username, uniqueness: {case_sensitive: false}
+    # validates :name, presence: true
 end
