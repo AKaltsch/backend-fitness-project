@@ -1,2 +1,0 @@
-class DataEntriesController < ApplicationController
-end

@@ -10,52 +10,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_19_001317) do
+ActiveRecord::Schema.define(version: 2021_10_24_013736) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "data_entries", force: :cascade do |t|
-    t.integer "sets"
-    t.integer "reps"
+  create_table "benchpresses", force: :cascade do |t|
     t.integer "weight"
-    t.integer "distance"
-    t.integer "time"
-    t.integer "exercise_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "exercises", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-    t.string "image_url"
-    t.string "exercise_type"
-    t.integer "workout_id"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "posts", force: :cascade do |t|
+  create_table "distances", force: :cascade do |t|
+    t.decimal "distance"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "hikes", force: :cascade do |t|
     t.string "title"
-    t.text "body"
+    t.text "description"
+    t.decimal "lat"
+    t.decimal "lng"
+    t.string "image_url"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "miles", force: :cascade do |t|
+    t.string "time"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "squats", force: :cascade do |t|
+    t.integer "weight"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.string "profile_pic"
     t.string "username"
     t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "workouts", force: :cascade do |t|
-    t.string "name"
-    t.string "workout_type"
+    t.text "bio"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

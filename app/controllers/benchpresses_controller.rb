@@ -1,0 +1,2 @@
+class BenchpressesController < ApplicationController
+end
