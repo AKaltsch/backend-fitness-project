@@ -1,0 +1,2 @@
+class SquatsController < ApplicationController
+end
