@@ -50,16 +50,16 @@ distance9 = Distance.create( distance: 5.0, user_id: joe.id)
 distance10 = Distance.create( distance: 2.2, user_id: joe.id)
 
 puts "seeding miles..."
-mile1 = Mile.create( time: 835, user_id: alec.id)
-mile2 = Mile.create( time: 800, user_id: alec.id)
-mile3 = Mile.create( time: 1030, user_id: alec.id)
-mile4 = Mile.create( time: 915, user_id: alec.id)
-mile5 = Mile.create( time: 730, user_id: alec.id)
-mile6 = Mile.create( time: 645, user_id: joe.id)
-mile7 = Mile.create( time: 715, user_id: joe.id)
-mile8 = Mile.create( time: 559, user_id: joe.id)
-mile9 = Mile.create( time: 925, user_id: joe.id)
-mile10 = Mile.create( time: 745, user_id: joe.id)
+mile1 = Mile.create( time: 8.5, user_id: alec.id)
+mile2 = Mile.create( time: 8.0, user_id: alec.id)
+mile3 = Mile.create( time: 10.5, user_id: alec.id)
+mile4 = Mile.create( time: 9.25, user_id: alec.id)
+mile5 = Mile.create( time: 7.75, user_id: alec.id)
+mile6 = Mile.create( time: 6.5, user_id: joe.id)
+mile7 = Mile.create( time: 7.25, user_id: joe.id)
+mile8 = Mile.create( time: 6.0, user_id: joe.id)
+mile9 = Mile.create( time: 9.7, user_id: joe.id)
+mile10 = Mile.create( time: 7.45, user_id: joe.id)
 
 
 
