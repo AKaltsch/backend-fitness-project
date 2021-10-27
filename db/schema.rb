@@ -32,8 +32,8 @@ ActiveRecord::Schema.define(version: 2021_10_24_013736) do
   create_table "hikes", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.decimal "lat"
-    t.decimal "lng"
+    t.string "lat"
+    t.string "lng"
     t.string "image_url"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false

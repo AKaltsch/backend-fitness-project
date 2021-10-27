@@ -61,6 +61,11 @@ mile8 = Mile.create( time: 6.0, user_id: joe.id)
 mile9 = Mile.create( time: 9.7, user_id: joe.id)
 mile10 = Mile.create( time: 7.45, user_id: joe.id)
 
+puts "seeding hikes...."
+hike1 = Hike.create( title: "Crystal Springs", description: "Hike by the water", lat: "37.517827080328686", lng: "-122.3361935715332", image_url: "https://tse2.mm.bing.net/th?id=OIP.s3WQtTOXGDS_byrk_bKr4AHaHa&pid=Api&P=0&w=172&h=172", user_id: alec.id)
 
+hike2 = Hike.create( title: "CSM", description: "Hike by the water", lat: "37.46388998463912", lng: "-122.33138705297851", image_url: "https://tse2.mm.bing.net/th?id=OIP.iRlBTD4xyvZCpjHHjAPqagHaE8&pid=Api&P=0&w=269&h=180", user_id: alec.id)
+
+# :id, :title, :description, :lat, :lng, :image_url, :user_id
 
 puts "seeding complete"
