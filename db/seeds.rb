@@ -50,17 +50,22 @@ distance9 = Distance.create( distance: 5.0, user_id: joe.id)
 distance10 = Distance.create( distance: 2.2, user_id: joe.id)
 
 puts "seeding miles..."
-mile1 = Mile.create( time: 835, user_id: alec.id)
-mile2 = Mile.create( time: 800, user_id: alec.id)
-mile3 = Mile.create( time: 1030, user_id: alec.id)
-mile4 = Mile.create( time: 915, user_id: alec.id)
-mile5 = Mile.create( time: 730, user_id: alec.id)
-mile6 = Mile.create( time: 645, user_id: joe.id)
-mile7 = Mile.create( time: 715, user_id: joe.id)
-mile8 = Mile.create( time: 559, user_id: joe.id)
-mile9 = Mile.create( time: 925, user_id: joe.id)
-mile10 = Mile.create( time: 745, user_id: joe.id)
+mile1 = Mile.create( time: 8.5, user_id: alec.id)
+mile2 = Mile.create( time: 8.0, user_id: alec.id)
+mile3 = Mile.create( time: 10.5, user_id: alec.id)
+mile4 = Mile.create( time: 9.25, user_id: alec.id)
+mile5 = Mile.create( time: 7.75, user_id: alec.id)
+mile6 = Mile.create( time: 6.5, user_id: joe.id)
+mile7 = Mile.create( time: 7.25, user_id: joe.id)
+mile8 = Mile.create( time: 6.0, user_id: joe.id)
+mile9 = Mile.create( time: 9.7, user_id: joe.id)
+mile10 = Mile.create( time: 7.45, user_id: joe.id)
 
+puts "seeding hikes...."
+hike1 = Hike.create( title: "Crystal Springs", description: "Hike by the water", lat: "37.517827080328686", lng: "-122.3361935715332", image_url: "https://tse2.mm.bing.net/th?id=OIP.s3WQtTOXGDS_byrk_bKr4AHaHa&pid=Api&P=0&w=172&h=172", user_id: alec.id)
 
+hike2 = Hike.create( title: "CSM", description: "Hike by the water", lat: "37.46388998463912", lng: "-122.33138705297851", image_url: "https://tse2.mm.bing.net/th?id=OIP.iRlBTD4xyvZCpjHHjAPqagHaE8&pid=Api&P=0&w=269&h=180", user_id: alec.id)
+
+# :id, :title, :description, :lat, :lng, :image_url, :user_id
 
 puts "seeding complete"
